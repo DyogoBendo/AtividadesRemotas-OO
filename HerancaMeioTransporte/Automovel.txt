@@ -1,0 +1,4 @@
+37, false, false, 1617056349959, Automovel, Fiat, Uno, 2001, diesel, 252, 457.0
+104, false, false, 1617056398091, Automovel, Toyota, Corolla, 2008, álcool, 197, 304.0
+88, false, false, 1617056476583, Automovel, Volkswagen, Gol, 2005, gasolina, 190, 403.0
+0, false, false, 1617056592177, Automovel, Teste, teste, 123, teste, 123, 123.0

@@ -5,10 +5,24 @@
  */
 package ifpr.oo.herancameiotransporte.Models;
 
+import java.util.Date;
+
 /**
  *
  * @author Dyogo
  */
 public class Automovel extends MeioTransporte{
-    
+        public Automovel(String marca, String modelo, String combustivel, float peso, int ano, int tanqueMaximo) {
+        Date d = new Date();
+        this.locomocao = "Automovel";
+        this.marca = marca;
+        this.modelo = modelo;
+        this.combustivel = combustivel;
+        this.peso = peso;
+        this.ano = ano;
+        this.tanqueMaximo = tanqueMaximo;
+        this.tanque = 0;
+        this.id = d.getTime();
+        this.nome = this.marca + " - " + this.modelo + " " + this.ano;
+    }    
 }
