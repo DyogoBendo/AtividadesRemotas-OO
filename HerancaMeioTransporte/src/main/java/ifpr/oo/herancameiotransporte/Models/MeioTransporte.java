@@ -166,11 +166,12 @@ public class MeioTransporte {
             throw new Exception ("O " + this.getLocomocao() + " precisa estar ligado para ser colocado em movimento!");
         }
         
-        if (this.tanque == 0){
+        if (this.tanque <= 0){
             throw new Exception ("O " + this.getLocomocao() + " não pode ser colocado em movimento sem combustível!");
         }
         
-        this.setIsMovendo(true);        
+        this.setIsMovendo(true);
+        this.tanque -= 10;
     }
     
     public void parar() throws Exception{
