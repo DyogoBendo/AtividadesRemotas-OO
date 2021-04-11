@@ -1,2 +1,0 @@
-754, true, false, 1617056237237, Aviao, Gol, Boing, 2009, querosene, 986, 854.0
-93, false, false, 1617056280524, Aviao, Azul, Boing-853, 2001, querosene, 741, 942.0
