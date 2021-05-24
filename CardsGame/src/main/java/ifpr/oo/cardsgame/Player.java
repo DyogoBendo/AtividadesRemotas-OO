@@ -1,3 +1,5 @@
+package ifpr.oo.cardsgame;
+
 
 import java.util.ArrayList;
 
@@ -32,5 +34,11 @@ public class Player {
     public void setDeck(ArrayList<Card> deck) {
         this.deck = deck;
     }
+
+    @Override
+    public String toString() {
+        return "Player{" + "nome=" + nome + ", deck=" + deck + '}';
+    }
         
+    
 }
