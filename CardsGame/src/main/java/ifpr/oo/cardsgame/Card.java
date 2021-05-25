@@ -18,7 +18,7 @@ public final class Card {
     String naipe;
     String image;
     final static String[] TABELA_VALORES = {"J", "Q", "K", "A"};    
-    final static String[] NAIPES = {"ouro","espada", "copa", "pau"};
+    final static String[] NAIPES = {"ouro","espada", "copa", "pau"};    
     
     public Card(int valor, String naipe){
         this.valor = valor;
@@ -36,31 +36,24 @@ public final class Card {
         }        
     }
     public static String getNomeProximo(int valor){
-        if (valor < 11 || valor == 14 ){
-            if (valor < 11){
-                return Integer.toString(valor + 1);                
-            } else{
-                return "2";
-            }
-        }else{            
+        if (valor < 10){            
+            return Integer.toString(valor + 1);                            
+        }
+        else if(valor == 14){
+            return "2";
+        }        
+        else{            
             int p = valor - 10;             
             return TABELA_VALORES[p];
         }        
     }
     
-    public static int getProximo(int valor){
+    public static int getValorProximo(int valor){
         if(valor == 14){
             return 2;
         } else{
             return valor + 1;
         }
-    }
-
-    @Override
-    public String toString() {
-        return "Card{" + "nome=" + nome + ", naipe=" + naipe + '}';
-    }
-    
-    
+    }   
     
 }
